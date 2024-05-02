@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;      /* ajouté pour éviter le décallage du trait au dessus des liens */
 }
 
 .main-container {
@@ -34,6 +35,8 @@ a {
     margin: 0;
     font-size: 22px;
 }
+
+
 
 .card {
     background-color: white;
@@ -56,6 +59,123 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 79px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 61.09px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;      /* pour alligner le H avec le l du bloc en dessous */
+    margin-top: 0;
+    padding-top: 16px;
+}
+
+nav li a:hover {
+    color: #0065FC;
+}
+
+nav li:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 14px;      /* pour compenser le décallage des 2 pixel du trait */
+}
+
+/****** Title ***********/
+
+.subtitle {
+    margin: 8px 0;
+}
+
+/****** Search ***********/
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+    width: 377px;
+    height: 49px;
+    margin: 35px 0;
+  }
+
+.search-icon {
+    width: 49px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+
+.search-input {
+    border: none;
+    height: 48px;
+    flex-grow: 1;       /* permet d'ajuster la taille du champs */
+    text-align: center;
+    font-weight: bold;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    height: 49px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+}
+
+/****** Filters ***********/
+
+.filters {
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2.5px solid var(--main-bg-color);
+    border-radius: 25px;
+    height: 45px;
+    width: auto;
+    padding: 0px 19px;
+    margin-left: 15px;
+}
+
+.filter-text {
+    margin-left: 10px;
 }
 
 /****** Hebergements And Populaires ***********/

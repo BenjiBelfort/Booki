@@ -16,11 +16,91 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>       <!-- ajouté le 29/04 -->
+            <div class="logo">
+                <a href="#"><img src="images/logo/Booki.png" alt="logo Booki"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
+            <section class="title-and-search">
+                <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+            
+                <!-- ajouté le 30/04 -->
+                <form action="" method="get">
+                    <div class="search-container">
+                        <label for="search"><i class="fa-solid fa-location-dot search-icon"></i></label>
+                        <input type="search" name="search" id="search" placeholder="Où revez-vous de partir ??" class="search-input">
+                        <a class="search-button" href="#">Rechercher</a>
+                        <!-- ici il y aura l'icone de loupe à gérer -->
+                    </div>
+                </form>
+
+                <div class="filters">
+                    <div class="filters-title">
+                        <p>Filtres</p>
+                    </div>
+
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filter-icon">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </div>
+                            <div class="filter-text">
+                                <p>Économique</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filter-icon">
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <div class="filter-text">
+                                <p>Familial</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filter-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="filter-text">
+                                <p>Romantique</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filter-icon">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+                            <div class="filter-text">
+                                <p>Nos pépites</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </section>
+
+            
+
+        
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
