@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0;      /* ajouté pour éviter le décallage du trait au dessus des liens */
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -276,9 +276,7 @@ input::placeholder {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    /* flex-flow: row wrap; */
     justify-content: space-between;
-    /* align-content: flex-start; */
 }
 
 .hebergements-cards a {
@@ -425,10 +423,7 @@ footer {
 }
 
 .footer-list {
-    flex: 1 1 0;    /* voir ci-dessous les valeurs */
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0; */
+    flex: 1 1 0;
     padding: 20px;
 }
 
@@ -563,7 +558,7 @@ footer {
 
     nav li {
         margin-left: 0;
-        flex: 1; /* les 2 blocs prennent la même place en largeur */
+        flex: 1;
         text-align: center;
         border-bottom: 2px solid var(--main-bg-color);
         padding-bottom: 15px;
